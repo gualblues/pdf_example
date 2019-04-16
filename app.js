@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
 const fs = require('fs');
 const pdf = require('pdf-parse');
  
-let dataBuffer = fs.readFileSync( path.join(__dirname + '/dados/Currículo.pdf'));
+let dataBuffer = fs.readFileSync( path.join(__dirname + '/dados/oi.pdf'));
  
 pdf(dataBuffer).then(function(data) {
  
